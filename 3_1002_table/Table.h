@@ -24,11 +24,14 @@ private:
     matrix mLEqual;
     matrix mGEqual;
 
-    matrix add(const matrix&, const matrix&);
-    matrix multiply(const matrix&, const matrix&);
-    matrix tranpose(const matrix&);
-    matrix warshall(const matrix&);
+    matrix add(const matrix&, const matrix&) const;
+    matrix multiply(const matrix&, const matrix&) const;
+    matrix tranpose(const matrix&) const;
+    matrix warshall(const matrix&) const;
 
+    int getIdx(char) const;
+
+    matrix getUnit(int) const;
     matrix getFirst() const;
     matrix getLast() const;
     matrix getEqual() const;
