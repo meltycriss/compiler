@@ -1,33 +1,28 @@
 //
-// Created by criss on 16-5-31.
+// Created by criss on 16-6-2.
 //
 
-#ifndef INC_3_1003_SLR_SLR_H
-#define INC_3_1003_SLR_SLR_H
+#ifndef INC_4_1000_LRK_LRK_H
+#define INC_4_1000_LRK_LRK_H
+
+#endif //INC_4_1000_LRK_LRK_H
 
 #include <vector>
 #include <string>
 #include <map>
 
-class Slr{
+class Lrk{
 private:
     typedef std::pair<char,std::string> trans;
     typedef std::vector<std::vector<int> > matrix;
-
-    enum {
-        ERROR=0,
-        LESS=1,
-        EQUAL=2,
-        GREATER=3
-    };
 
     char mStart;
     std::vector<char> mVecNT;
     std::vector<char> mVecT;
     std::vector<char> mVecAllSymbol;
-    std::map<char, std::vector<std::string> > mMapTrans;
-    matrix analyzeTable;
+    std::vector<trans> mVecTrans;
     std::string mInput;
+    std::vector<std::vector<std::pair<char,int> > > analyzeTable;
     std::vector<std::pair<std::string, std::string> > process;
 
     int getIdx(char) const;
@@ -41,5 +36,3 @@ public:
     void compute();
     void print();
 };
-
-#endif //INC_3_1003_SLR_SLR_H
