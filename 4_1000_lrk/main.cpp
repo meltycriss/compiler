@@ -1,8 +1,12 @@
+#include "Lrk.h"
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
+    Lrk lrk;
+    lrk.init();
+    lrk.compute();
+    lrk.print();
     return 0;
 }
