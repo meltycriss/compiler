@@ -5,8 +5,6 @@
 #ifndef INC_4_1000_LRK_LRK_H
 #define INC_4_1000_LRK_LRK_H
 
-#endif //INC_4_1000_LRK_LRK_H
-
 #include <vector>
 #include <string>
 #include <map>
@@ -48,3 +46,6 @@ public:
     void compute();
     void print();
 };
+
+#endif //INC_4_1000_LRK_LRK_H
+
